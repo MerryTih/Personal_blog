@@ -1,0 +1,53 @@
+@import "variables.scss";
+@import "mixin-list.scss";
+
+/* Posts content */
+
+.posts-content {
+  padding-top: 11.3rem;
+  text-align: center;
+
+  .title-posts-content {
+    margin-bottom: 2.4rem;
+  }
+
+  .section-posts-desc {
+    font-size: $fontSize;
+    margin-bottom: 6.25rem;
+  }
+
+  .arragment-of-cards {
+    max-width: 1186px;
+    @include flexSettings($wrap: wrap);
+  }
+}
+
+/* Additional settings */
+
+.card-post-options {
+  margin-right: 0.85rem; 
+}
+
+/* Media */ 
+
+@include xl-l(10px) {
+  .arragment-of-cards {
+    justify-content: space-around;
+  }
+
+  .card-post-options:nth-child(3), .card-post-options:nth-child(6) {
+    margin-right: 0.85rem;
+  }
+}
+
+@include lg-l(22px) {
+  @include custom-styling(1.2rem, '.card-post-options');  
+}
+
+@include lg-l(81px) {
+  @include custom-styling(1.2rem, '.card-post-options');  
+  
+  @include custom-styling(1rem, '.posts-content .section-posts-desc') {
+    padding: 0 1rem;
+  }
+}

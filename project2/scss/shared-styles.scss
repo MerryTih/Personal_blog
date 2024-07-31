@@ -1,0 +1,371 @@
+@import "set-styles.scss";
+@import "variables.scss";
+@import "mixin-list.scss";
+
+/* Header */
+
+.wrapper {
+  max-width: 1186px;
+  margin: 0 auto;
+  padding: 0 1.1rem;
+}
+
+.header-active {
+  background:  rgba(17, 7, 52, 0.977);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 1.25rem;
+  transition: all 0.2s linear;
+  z-index: 5;  
+}
+
+.header-nav {
+  @include flexSettings($wrap: wrap, $justifycont: space-between, $alignit: center);
+  padding-top: 2.1rem;
+}
+
+.header-logo {
+  max-width: 13rem;
+}
+
+.header-list {
+  @include flexSettings($wrap: wrap);
+}
+
+.header-list li {
+  margin-right: 2.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-list li a {
+  color: $titleColor;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    opacity: .75;
+  }
+}
+
+/* Articles settings*/
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: $titleColor;
+}
+
+.accent {
+  @include emphasis(linear-gradient(270.00deg, rgb(34, 211, 238) 50%,rgb(14, 165, 233) 100%));
+}
+
+/* Cards */
+
+.cards-with-posts {
+  @include flexSettings($justifycont: space-between);
+}
+
+.card-post {
+  margin-right: 1.25rem; 
+  margin-bottom: 6.25rem;
+  font-size: 1.25rem;
+  transition: all .2s;  
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:nth-child(3), &:nth-child(6){
+    margin-right: 0;
+  }
+}
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-img, .card-text-container {
+  max-width: 23rem;
+}
+
+.card-text-container {
+  text-align: center;
+  padding: 1.15em 0.7em 1.8em 0.7em;
+  border-radius: 0  0 20px 20px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  background: $cardsBgcWithoutOpacity;
+  color: $titleColor;
+}
+
+.card-post-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: $titleColor;
+  margin-bottom: 0.5em;
+}
+
+.card-post-time-date {
+  color: $descColor;
+  margin-bottom: 1.2em;
+}
+
+/* Subscribe section*/
+
+.subscribe {
+  margin-bottom: 5.2rem;
+}
+
+.subscribe-holder {
+  @include flexSettings($justifycont: space-between, $alignit: center);
+}
+
+.subscribe-text {
+  flex-basis: 532px;
+}
+
+.subscribe-title {
+  margin-bottom: 2.1rem;
+}
+
+.subscribe-desc {
+  font-size: $fontSize;
+}
+
+.email-form {
+  flex-basis: 522px; 
+}
+
+.form-info {
+  @include flexSettings($justifycont: space-between);
+  background-color: $cardsBgcWithoutOpacity;
+  border-radius: 30px;
+}
+
+.email-form-field {
+  background-color: transparent;
+  border: 0;
+  font-size: $fontSize;
+  margin-left: 2.6rem;
+  color: $descColor;
+  width: 100%;
+
+  &::placeholder {
+    font-size: $fontSize;
+    color: $descColor;
+  }
+}
+
+.email-form-button {
+  background: linear-gradient(270.00deg, rgb(34, 211, 238) 50%,rgb(14, 165, 233) 100%);
+  color: $cardsBgcWithoutOpacity;
+  padding: 0.75rem 2.3rem;
+  margin: 0.75rem 1.1rem 0.75rem 0.6rem;
+  font-size: $fontSize;
+  font-weight: 700;
+  border-radius: 30px;
+  border: 0;
+  transition: all .2s linear;
+
+  &:hover, &:active, &:focus {
+    background: linear-gradient(270.00deg, rgb(27, 166, 188) 50%,rgb(14, 149, 211) 100%);
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+}  
+
+/* Footer */
+
+footer {
+  border-top: 1px solid $descColor;
+  padding-top: 1.7rem;
+  padding-bottom: 2.9rem;
+}
+
+.wrapper-footer {
+  max-width: 1220px;
+}
+
+.footer-content {
+  @include flexSettings($justifycont: space-between, $alignit: center);
+  font-size: $fontSize;
+}
+
+.footer-text {
+  font-size: 1em;
+  font-weight: 500;
+
+  .heart-ico {
+    @include emphasis(linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(246,7,7,1) 16%, rgba(153,0,0,1) 61%, rgba(13,8,8,1) 100%));
+  }
+}
+
+.footer-icons {
+  @include flexSettings;
+  max-width: 9.6em;
+}
+
+.footer-icons li {
+  margin-right: 0.6rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+/* Media */
+
+@include xl-l(10px) {
+  @include custom-styling(1.2rem, '.card-post');
+}
+
+@include xl-l(88px) {
+  @include padding-set('.subscribe .wrapper', 0 2.5rem);
+
+  .subscribe-holder {
+    display: block;
+  }
+
+  .subscribe-text {
+    @include flexSettings($alignit: center, $direction: column);
+    max-width: 100%;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .subscribe-title {
+    text-align: center;
+  }
+}
+
+@include xl-l(230px) {
+  @include custom-styling(1.1rem, '.card-post');
+}
+
+@include lg-l(54px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-text {
+    margin-bottom: 1rem;
+  }
+}
+
+@include lg-l(65px) {
+  .form-info {
+    border-radius: 20px;
+  }
+
+  .email-form-field {
+    margin-left: 1.7rem;
+    @include custom-styling(1.1rem, '&::placeholder');
+  }
+
+  @include padding-set('.email-form-button', 0.9rem 1.1rem) {
+    margin: 0.31rem 0.38rem 0.31rem;
+  }
+}
+
+@include lg-l(84px) {
+  @include custom-styling(1rem, '.card-post');  
+}
+
+@include lg-l(105px) {
+  @include custom-styling(15px, 'html');  
+}
+
+@include md-l {
+  @include custom-styling(12px, 'html');  
+
+  .cards-with-posts {
+    @include flexSettings($alignit: center, $direction: column);
+  }
+
+  @include custom-styling(1.3rem, '.card-post') {
+    margin-right: 0;  
+    padding: 0 1.2rem;
+  } 
+
+}
+
+@include sm-l(57px) {
+
+  @include custom-styling(1rem, '.footer-content');
+
+  @include custom-styling(2rem, '.section-title');
+
+  @include custom-styling(0.9rem, '.subscribe-desc'); 
+}
+
+@include sm-l(109px) {
+  .header-logo {
+    max-width: 10rem;
+  }
+
+  .header-list li {
+    margin-right: 1.2rem;
+  }
+
+  @include custom-styling(1.2rem, '.header-list li a');
+}
+
+@include sm-l(146px) {
+  @include custom-styling(0.9rem, '.footer-content');  
+}
+
+@include sm-l(193px) {
+  @include custom-styling(0.8rem, '.footer-content');  
+}
+
+@include sm-l(210px) { 
+  @include custom-styling(10px, 'html');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

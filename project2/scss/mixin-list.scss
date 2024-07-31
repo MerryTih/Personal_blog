@@ -1,0 +1,54 @@
+@mixin emphasis($colorGradient) {
+  background: $colorGradient;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin flexSettings($displayf: flex, $wrap: nowrap, $justifycont: flex start, $alignit: stretch, $direction: row) {
+  display: $displayf;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justifycont;
+  align-items: $alignit;
+}
+
+@mixin custom-styling($fontChange, $class-names...) {
+    @each $class-name in $class-names{
+    #{$class-name} {
+      font-size: $fontChange;
+      @content;
+    }
+  }
+}
+
+@mixin padding-set($selector, $padding...) {
+  #{$selector} {
+    padding: $padding;
+    @content;
+  }
+}
+
+@mixin sm-l($accuracy: 0px) { 
+  @media screen and (max-width: (map-get($breakpoints, sm) - $accuracy)) {
+    @content;
+  }
+}
+
+@mixin md-l($accuracy: 0px) { 
+  @media screen and (max-width: (map-get($breakpoints, md) - $accuracy)) {
+    @content;
+  }
+}
+
+@mixin lg-l($accuracy: 0px) { 
+  @media screen and (max-width: (map-get($breakpoints, lg) - $accuracy)) {
+    @content;
+  }
+}
+
+@mixin xl-l($accuracy: 0px) { 
+  @media screen and (max-width: (map-get($breakpoints, xl) - $accuracy)) {
+    @content;
+  }
+}
+

@@ -1,0 +1,94 @@
+@import "variables.scss";
+@import "mixin-list.scss";
+
+/* Post intro */
+
+.post-intro {
+  padding: 15.3rem 1rem 0 1rem;
+  margin-bottom: 7.8rem;
+  text-align: justify;
+  @include flexSettings($justifycont: flex start, $alignit: center, $direction: column);
+}
+
+.page-post-title {
+  margin-bottom: 3.25rem;
+  text-align: center;
+}
+
+.post-feature {
+  font-size: 1.5rem;
+  margin-bottom: 2.7rem;
+  margin-left: 1rem;
+}
+
+.post-img {
+  max-width: 1200px;
+}
+
+/* Paragraphs settings */
+
+.wrapper-paragraph {
+  max-width: 1109px;
+  font-size: 2.25rem;
+  padding: 0 4rem;
+}
+
+.paragraph-desc {
+  text-align: justify;
+}
+
+.paragraph-text {
+  color: $titleColor;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 2em;
+}
+
+.paragraph-title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* Second paragraph */
+
+.second-paragraph-list {
+  list-style-type: disc;
+  padding-left: 2em;
+}
+
+/* Fourth paragraph */
+
+.fourth-paragraph-text-options {
+  margin-bottom: 0.6em;
+
+  &:last-child {
+    margin-bottom: 3.3em;
+  }
+}
+
+.fourth-paragraph-list li a {
+  color: $titleColor;
+}
+
+/* Media */
+
+@include md-l(56px) {
+  .post-feature {
+    text-align: center;
+  }
+
+  .post-intro{
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+  }
+}
+
+@include sm-l(50px) {
+  @include custom-styling(1.7rem, '.wrapper-paragraph'); 
+  
+  @include custom-styling(1.3rem, '.post-feature');
+
+  .post-img img {
+   border-radius: 20px;
+  }
+}

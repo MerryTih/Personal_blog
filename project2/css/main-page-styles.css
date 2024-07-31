@@ -1,0 +1,343 @@
+/* About-author section */
+.about-author {
+  margin-bottom: 8.3rem;
+}
+
+.section-about-author-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding-top: 12.3rem;
+}
+
+.about-author-title {
+  margin-bottom: 3rem;
+}
+
+.author-description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 713px;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.soc-net-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: flex start;
+      -ms-flex-pack: flex start;
+          justify-content: flex start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.soc-net-icons li {
+  max-width: 60px;
+  margin-right: 2.1rem;
+}
+
+.man-picture {
+  max-width: 18.8rem;
+}
+
+/* Recent projects */
+.recent-projects {
+  margin-bottom: 3.4rem;
+}
+
+.block-projects-title {
+  margin-bottom: 5.2rem;
+}
+
+.project-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.6rem;
+  background-color: rgba(30, 41, 59, 0.4);
+  width: 100%;
+  border-radius: 20px;
+  padding: 2.1rem 1.1rem;
+}
+
+.project-img {
+  max-width: 15.6rem;
+  margin-right: 3.1rem;
+}
+
+.item-title-area-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: flex start;
+      -ms-flex-pack: flex start;
+          justify-content: flex start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 1.6rem;
+}
+
+.project-item-title {
+  color: rgb(248, 250, 252);
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-right: 1.25rem;
+}
+
+.project-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: flex start;
+      -ms-flex-pack: flex start;
+          justify-content: flex start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.project-area-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.area-web-bgc {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(16, 185, 129, 0.2)), to(rgba(190, 242, 100, 0.2)));
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.2), rgba(190, 242, 100, 0.2) 100%);
+}
+
+.area-js-bgc {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 38, 38, 0.2)), to(rgba(249, 115, 22, 0.2)));
+  background: linear-gradient(180deg, rgba(220, 38, 38, 0.2), rgba(249, 115, 22, 0.2) 100%);
+}
+
+.area-feature-bgc {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(124, 58, 237, 0.2)), to(rgba(96, 165, 250, 0.2)));
+  background: linear-gradient(180deg, rgba(124, 58, 237, 0.2), rgba(96, 165, 250, 0.2) 100%);
+}
+
+.area-web-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(16, 185, 129)), to(rgb(190, 242, 100)));
+  background: linear-gradient(180deg, rgb(16, 185, 129), rgb(190, 242, 100));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.area-js-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(220, 38, 38)), to(rgb(249, 115, 22)));
+  background: linear-gradient(180deg, rgb(220, 38, 38), rgb(249, 115, 22));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.area-feature-color {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(124, 58, 237)), to(rgb(96, 165, 250)));
+  background: linear-gradient(180deg, rgb(124, 58, 237), rgb(96, 165, 250));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.project-item-desc {
+  font-size: 1.25rem;
+  max-width: 840px;
+  margin-bottom: 0.9rem;
+}
+
+/* Latest posts */
+.latest-posts {
+  margin-bottom: 2rem;
+}
+
+.post-title-link-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5.1rem;
+}
+
+.view-more {
+  color: rgb(248, 250, 252);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+  background: url(../img/svg/main-page-icons/arrow.svg) no-repeat center right;
+  background-size: 2.5rem;
+  padding: 0.7rem 0.75rem;
+  padding-right: 3.5rem;
+}
+.view-more:focus, .view-more:hover {
+  opacity: 0.65;
+}
+
+/* Media */
+@media screen and (max-width: 938px) {
+  .about-author .wrapper {
+    padding: 0 2.4rem 0 3rem;
+  }
+  .section-about-author-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: flex start;
+        -ms-flex-pack: flex start;
+            justify-content: flex start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-about-author-holder .about-author-title {
+    text-align: center;
+  }
+  .section-about-author-holder .author-description {
+    text-align: justify;
+  }
+  .section-about-author-holder .man-picture {
+    margin-bottom: 3rem;
+  }
+  .section-about-author-holder .soc-net-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding: 0 2.3rem;
+  }
+  .section-about-author-holder .soc-net-icons li {
+    margin-right: 1rem;
+  }
+  .section-about-author-holder .soc-net-icons li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .recent-projects .wrapper {
+    padding: 0 1.9rem;
+  }
+  .block-projects-title {
+    padding: 0 1.5rem;
+  }
+  .project-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: flex start;
+        -ms-flex-pack: flex start;
+            justify-content: flex start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .project-item .project-img {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    max-width: 90px;
+  }
+  .project-item .item-title-area-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .project-item .project-item-desc {
+    text-align: justify;
+  }
+  .post-title-link-holder {
+    padding: 0 2rem 0 1.7rem;
+  }
+}

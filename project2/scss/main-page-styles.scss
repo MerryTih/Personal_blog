@@ -1,0 +1,225 @@
+@import "variables.scss";
+@import "mixin-list.scss";
+
+/* About-author section */
+
+.about-author {
+  margin-bottom: 8.3rem;
+}
+
+.section-about-author-holder { 
+  @include flexSettings($justifycont: space-between);
+  padding-top: 12.3rem;
+}
+
+.about-author-title {
+  margin-bottom: 3rem;
+}
+
+.author-description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  max-width: 713px;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
+
+.soc-net-icons {
+  @include flexSettings;
+
+  & li {
+    max-width: 60px;
+    margin-right: 2.1rem;
+  }
+}
+
+.man-picture {
+  max-width: 18.8rem;
+}
+
+/* Recent projects */
+
+.recent-projects {
+  margin-bottom: 3.4rem;
+}
+
+.block-projects-title {
+  margin-bottom: 5.2rem;
+}
+
+.project-item {
+  @include flexSettings($justifycont: space-around, $alignit: center);
+  margin-bottom: 2.6rem;
+  background-color: $cardsProjectBgc;
+  width: 100%;
+  border-radius: 20px;
+  padding: 2.1rem 1.1rem;
+}
+
+.project-img {
+  max-width: 15.6rem;
+  margin-right: 3.1rem; 
+}
+
+.item-title-area-holder {
+  @include flexSettings;
+  margin-bottom: 1.6rem;
+}
+
+.project-item-title {
+  color: $titleColor;
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-right: 1.25rem;
+}
+
+.project-area {
+  @include flexSettings($alignit: center);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px; 
+}
+
+.project-area-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.area-web-bgc {
+  background: linear-gradient(180.00deg, rgba(16, 185, 129, 0.2),rgba(190, 242, 100, 0.2) 100%);
+}
+
+.area-js-bgc {
+  background: linear-gradient(180.00deg, rgba(220, 38, 38, 0.2),rgba(249, 115, 22, 0.2) 100%);
+}
+
+.area-feature-bgc{
+  background: linear-gradient(180.00deg, rgba(124, 58, 237, 0.2),rgba(96, 165, 250, 0.2) 100%);
+}
+
+.area-web-color {
+  @include emphasis(linear-gradient(180.00deg, rgb(16, 185, 129),rgb(190, 242, 100)));
+}
+
+.area-js-color {
+  @include emphasis(linear-gradient(180.00deg, rgb(220, 38, 38),rgb(249, 115, 22)));
+}
+
+.area-feature-color {
+  @include emphasis(linear-gradient(180.00deg, rgb(124, 58, 237),rgb(96, 165, 250)));
+}
+
+.project-item-desc {
+  font-size: $fontSize;
+  max-width: 840px;
+  margin-bottom: 0.9rem;
+}
+
+/* Latest posts */
+
+.latest-posts {
+  margin-bottom: 2rem;
+}
+
+.post-title-link-holder {
+  @include flexSettings($justifycont: space-between, $alignit: center);
+  margin-bottom: 5.1rem;
+}
+
+.view-more {
+  color: $titleColor;
+  font-size: $fontSize;
+  font-weight: 700;
+  text-decoration: none;
+  background: url(../img/svg/main-page-icons/arrow.svg) no-repeat center right;
+  background-size: 2.5rem;
+  padding: 0.7rem 0.75rem;
+  padding-right: 3.5rem;
+
+  &:focus, &:hover {
+    opacity: .65;
+  }
+}
+
+/* Media */
+@include lg-l(54px) {
+  @include padding-set('.about-author .wrapper', 0 2.4rem 0 3rem);
+
+  .section-about-author-holder {
+    @include flexSettings($alignit: center, $direction: column-reverse);
+
+    .about-author-title {
+      text-align: center;
+    }
+  
+    .author-description {
+      text-align: justify;
+    }
+
+    .man-picture {
+      margin-bottom: 3rem;
+    }
+
+    .soc-net-icons {
+      @include flexSettings($justifycont: center);
+      padding: 0 2.3rem;
+
+      li {
+        margin-right: 1rem;
+
+        &:last-child {
+          margin-right: 0;  
+        }
+      }
+    }
+  } 
+}
+
+@include md-l {
+  @include padding-set('.recent-projects .wrapper', 0 1.9rem);
+
+  @include padding-set('.block-projects-title', 0 1.5rem);
+
+  .project-item {
+    @include flexSettings($alignit: center, $direction: column);
+
+    .project-img {
+      margin-bottom: 2rem;
+      margin-right: 0;
+      max-width: 90px;
+    }
+
+    .item-title-area-holder {
+      @include flexSettings($justifycont: center);
+    }
+
+    .project-item-desc {
+      text-align: justify;
+    }
+  }
+
+  @include padding-set('.post-title-link-holder', 0 2rem 0 1.7rem);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

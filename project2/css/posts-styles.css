@@ -1,0 +1,60 @@
+/* Posts content */
+.posts-content {
+  padding-top: 11.3rem;
+  text-align: center;
+}
+.posts-content .title-posts-content {
+  margin-bottom: 2.4rem;
+}
+.posts-content .section-posts-desc {
+  font-size: 1.25rem;
+  margin-bottom: 6.25rem;
+}
+.posts-content .arragment-of-cards {
+  max-width: 1186px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: flex start;
+      -ms-flex-pack: flex start;
+          justify-content: flex start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+/* Additional settings */
+.card-post-options {
+  margin-right: 0.85rem;
+}
+
+/* Media */
+@media screen and (max-width: 1190px) {
+  .arragment-of-cards {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card-post-options:nth-child(3), .card-post-options:nth-child(6) {
+    margin-right: 0.85rem;
+  }
+}
+@media screen and (max-width: 970px) {
+  .card-post-options {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 911px) {
+  .card-post-options {
+    font-size: 1.2rem;
+  }
+  .posts-content .section-posts-desc {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}

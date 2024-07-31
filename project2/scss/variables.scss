@@ -1,0 +1,17 @@
+// Variables
+
+$descColor: rgb(203, 213, 225);
+$titleColor: rgb(248, 250, 252);
+$pageBgc: #0F172A;
+$cardsProjectBgc: rgba(30, 41, 59, 0.4);
+$cardsBgcWithoutOpacity: rgb(30, 41, 59);
+$baseFontSize: 16px;
+$fontSize: 1.25rem;
+
+// Breakpoints
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
